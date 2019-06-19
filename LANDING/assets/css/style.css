@@ -1,0 +1,55 @@
+body{
+	font-family: 'Baumans', cursive;
+	color: grey;
+}
+.wrapper  {
+  position: relative;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.text{
+     position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: 1000!important;
+}
+.text:before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0!important;
+  left: 0!important;
+  transform-origin: bottom;
+  transform: rotateX(180deg);
+}
+.sign-in-up a,.others a {
+	 text-decoration: none;
+      color: grey;
+	}
+	.sign-in-up p{
+		font-weight: 900;
+	}
+	form{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 11px;
+	}
+	form input{
+		border: 0;
+    box-shadow: none;
+	outline: none;
+	border-radius: 0;
+	border-bottom: 1px solid grey;
+	}
+	.others ul{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		list-style: none;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 6px;
+	}
+	.others li{
+		padding-right: 18px;
+	}
